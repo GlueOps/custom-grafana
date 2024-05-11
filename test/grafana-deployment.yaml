@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grafana
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grafana
+  template:
+    metadata:
+      labels:
+        app: grafana
+    spec:
+      imagePullSecrets:
+      - name: ghcr-secret
+      containers:
+      - name: grafana
+        image: ghcr.io/balajisa09/grafana-custom:v1.0.4
+        ports:
+        - containerPort: 3000
