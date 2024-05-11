@@ -1,1 +1,1 @@
-# template
+# Custom Grafana Image
