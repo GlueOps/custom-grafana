@@ -1,1 +1,1 @@
-# Custom Grafana Image
+# Cortex Grafana

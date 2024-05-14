@@ -16,6 +16,6 @@ spec:
       - name: ghcr-secret
       containers:
       - name: grafana
-        image: ghcr.io/balajisa09/grafana-custom:v1.0.4
+        image: ghcr.io/glueops/cortex-grafana
         ports:
         - containerPort: 3000
