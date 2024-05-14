@@ -1,0 +1,20 @@
+image:
+  registry: ghcr.io
+  repository: glueops/cortex-grafana
+  port: 3000
+
+
+podDisruptionBudget:
+  enabled: false
+
+deployment:
+  enabled: true
+  replicas: 1
+    
+ingress:
+  enabled: true
+  ingressClassName: public
+  entries:
+    - name: public
+      hosts:
+        - hostname: cortex-grafana.apps.nonprod.proximacentaurib.onglueops.rocks
