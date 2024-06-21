@@ -1,1 +1,1 @@
-# template
+# Cortex Grafana
